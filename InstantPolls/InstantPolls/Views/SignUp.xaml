@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InstantPolls.Views.SignUp"
+             Title="Sign Up">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                     Margin="15,15,0,5">
+            <Label Text="Email Address" FontSize="Caption" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="email.png"
+                           WidthRequest="20" HeightRequest="20"/>
+                <Entry x:Name="userEmail" HorizontalOptions="StartAndExpand" WidthRequest="320"/>
+            </StackLayout>
+            <Label Text="Password" FontSize="Caption" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="lock.png"
+                           WidthRequest="20" HeightRequest="20"/>
+                <Entry x:Name="userPassword" HorizontalOptions="StartAndExpand" WidthRequest="320" IsPassword="True"/>
+            </StackLayout>
+            <Label Text=" Confirm Password" FontSize="Caption" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="lock.png"
+                           WidthRequest="20" HeightRequest="20"/>
+                <Entry x:Name="userConfirmPass" HorizontalOptions="StartAndExpand" WidthRequest="320" IsPassword="True"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Button Text="Sign up" CornerRadius="40" FontAttributes="Bold"
+                            BackgroundColor="#2ecc71"
+                            TextColor="White" Clicked="SignUp_Clicked"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

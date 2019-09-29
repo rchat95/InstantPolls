@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "983134447125",
+    "firebase_url": "https://instantpolls-50888.firebaseio.com",
+    "project_id": "instantpolls-50888",
+    "storage_bucket": "instantpolls-50888.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983134447125:android:fd2abc356ab88b4546101c",
+        "android_client_info": {
+          "package_name": "com.companyname.instantpolls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983134447125-s8le6pcintmal9u0cg5127t7dt8vsv63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy3fLt-VNMVvF0cmW0Z-n0cnFPHVIMfnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983134447125-s8le6pcintmal9u0cg5127t7dt8vsv63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:customrenderers="clr-namespace:InstantPolls.CustomRenderers"
+             mc:Ignorable="d"
+             NavigationPage.HasBackButton="True"
+             Title="Create Poll"
+             x:Class="InstantPolls.Views.CreatePoll"
+             >
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" Margin="15,10,15,0"
+                     HorizontalOptions="FillAndExpand">
+
+            <StackLayout  x:Name="mainStack">
+                <Label Text="Ask a question" FontAttributes="Bold" FontSize="Large"/>
+                
+                <StackLayout BackgroundColor="Black" Padding="1" HorizontalOptions="FillAndExpand">
+                    <customrenderers:CustomEditor x:Name="quesDesc" BackgroundColor="White" HorizontalOptions="FillAndExpand"
+                        />
+                </StackLayout>
+
+                <Entry x:Name="opt1" Placeholder="Option 1" HorizontalOptions="FillAndExpand"/>
+                <Entry x:Name="opt2" Placeholder="Option 2" HorizontalOptions="FillAndExpand"/>
+                <Entry x:Name="opt3" Placeholder="Option 3" HorizontalOptions="FillAndExpand"/>
+                <Entry x:Name="opt4" Placeholder="Option 4" HorizontalOptions="FillAndExpand"/>
+                
+            </StackLayout>
+            <StackLayout>
+                <!--<StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <ImageButton Source="minus.png" HorizontalOptions="End"
+                         BackgroundColor="Transparent" HeightRequest="30" WidthRequest="30"
+                         Clicked="Minus_Clicked"/>
+                    <ImageButton Source="plus.png" HorizontalOptions="End"
+                         BackgroundColor="Transparent" HeightRequest="30" WidthRequest="30"
+                         Clicked="AddMore_Clicked"/>
+                </StackLayout>-->
+
+                <Button Text="Submit" BackgroundColor="#3498db"
+                    TextColor="White" HorizontalOptions="CenterAndExpand"
+                    WidthRequest="150"
+                    Clicked="Submit_Clicked"/>
+            </StackLayout>
+        </StackLayout>       
+    </ContentPage.Content>
+</ContentPage>

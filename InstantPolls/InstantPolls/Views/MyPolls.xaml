@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InstantPolls.Views.MyPolls"
+             Title="Dashboard">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"
+                     Margin="15,15,15,15">
+            <Label FontAttributes="Bold" FontSize="Large" Text="My Polls"/>
+            <Button x:Name="createBtn" BackgroundColor="#3498db"
+                    TextColor="White" Text="Create Poll" Clicked="createBtn_Clicked"/>
+
+            <ListView x:Name="myPollList">
+               
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="12">
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding .}" FontSize="Medium" FontAttributes="Bold"/>
+                                    <Label Text="{Binding .}" FontSize="Small"/>
+                                    <Label Text="{Binding .}" FontSize="Small"/>
+                                    <Label Text="{Binding .}" FontSize="Small"/>
+                                    <Label Text="{Binding .}" FontSize="Small"/>
+                                    <BoxView HeightRequest="100" WidthRequest="1" BackgroundColor="Black"/>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
